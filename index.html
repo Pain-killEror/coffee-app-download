@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoJo - Мобильное приложение</title> <!-- Изменено -->
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Скачайте мобильное приложение кофейни JoJo для удобного заказа кофе и десертов!">
+</head>
+<body>
+    <div class="container">
+        <header>
+             <!-- Убрали тег img с логотипом -->
+            <h1>Кофейня JoJo</h1> <!-- Название вместо лого -->
+        </header>
+
+        <main>
+            <!-- Промежуточный текст о кофейне -->
+            <section id="about-intro">
+                 <p>
+                    Откройте для себя мир ароматного кофе и уютной атмосферы в JoJo!
+                    Мы варим каждую чашку с любовью и используем только лучшие зерна.
+                    Загляните к нам или закажите заранее через наше новое приложение.
+                </p>
+            </section>
+
+            <!-- Секция скачивания приложения -->
+            <section id="download-section">
+                 <h2>Наше мобильное приложение</h2> <!-- Перенесли заголовок сюда -->
+                <p>
+                    Заказывайте любимый кофе, десерты и завтраки еще быстрее и удобнее
+                    с нашим новым мобильным приложением для Android!
+                </p>
+                <a href="app-debug.apk" class="btn-download" download="JoJoCoffeeApp.apk"> <!-- Имя файла при скачивании изменено -->
+                    Скачать приложение (.apk)
+                </a>
+                <p class="install-note">
+                    После скачивания файла, возможно, вам потребуется разрешить установку
+                    из неизвестных источников в настройках вашего телефона.
+                </p>
+            </section>
+
+             <!-- Можно добавить скриншот приложения -->
+             <!-- <img src="images/app_screenshot.png" alt="Скриншот приложения" class="screenshot"> -->
+
+        </main>
+
+        <footer>
+            <p>© <span id="year"></span> JoJo</p> <!-- Изменено -->
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
