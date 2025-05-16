@@ -4,33 +4,92 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helve
 .container { background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center; max-width: 500px; width: 100%; }
 
 /* Шапка */
-header { margin-bottom: 20px; } /* Уменьшил отступ */
-/* header .logo - больше не нужен */
-header h1 { font-size: 2em; color: #6F4E37; margin-bottom: 10px; font-weight: 700; } /* Увеличил шрифт */
+header { margin-bottom: 20px; }
+header h1 { font-size: 2em; color: #6F4E37; margin-bottom: 10px; font-weight: 700; }
 
 /* Основная часть */
 main section {
-    margin-bottom: 30px; /* Отступ между секциями */
+    margin-bottom: 30px;
 }
 
-#about-intro p { /* Стили для нового текста */
+#about-intro p {
     color: #444;
     font-size: 1.1em;
-    margin-bottom: 30px; /* Отступ после текста */
+    margin-bottom: 30px;
 }
 
-#download-section h2 { /* Стили для заголовка секции скачивания */
+#download-section h2 {
     font-size: 1.6em;
     color: #6F4E37;
     margin-bottom: 15px;
     font-weight: 600;
 }
 
-#download-section p { margin-bottom: 25px; color: #555; font-size: 1em; /* Сделал чуть меньше */ }
+#download-section p { margin-bottom: 25px; color: #555; font-size: 1em; }
 .btn-download { display: inline-block; background: #6F4E37; color: #fff; padding: 15px 35px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.1em; transition: background-color 0.3s ease, transform 0.2s ease; border: none; cursor: pointer; }
 .btn-download:hover { background: #8B6B4A; transform: translateY(-2px); }
 .install-note { font-size: 0.9em; color: #777; margin-top: 20px; }
 .screenshot { max-width: 80%; height: auto; margin-top: 30px; border-radius: 8px; border: 1px solid #eee; }
+
+/* Стили для секции статистики */
+#stats-section {
+    background-color: #fafafa; /* Немного другой фон для выделения */
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    text-align: left; /* Выравнивание текста в этой секции по левому краю */
+}
+
+#stats-section h2 {
+    font-size: 1.5em;
+    color: #6F4E37;
+    margin-bottom: 20px;
+    text-align: center; /* Заголовок секции по центру */
+    font-weight: 600;
+}
+
+#stats-section h3 {
+    font-size: 1.2em;
+    color: #5a3e2b;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#stats-section p {
+    color: #555;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+#stats-section ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+#stats-section ul li {
+    color: #444;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+    padding: 5px 0;
+    border-bottom: 1px dashed #eee; /* Разделитель между элементами */
+}
+#stats-section ul li:last-child {
+    border-bottom: none; /* Убираем разделитель у последнего элемента */
+}
+
+#stats-section span { /* Для выделения цифр */
+    font-weight: bold;
+    color: #6F4E37;
+}
+
+.error-message {
+    color: #c0392b; /* Красный цвет для ошибок */
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
 
 /* Подвал */
 footer { margin-top: 30px; font-size: 0.9em; color: #aaa; }
@@ -43,4 +102,9 @@ footer { margin-top: 30px; font-size: 0.9em; color: #aaa; }
     #download-section h2 { font-size: 1.4em; }
     #download-section p { font-size: 0.95em; }
     .btn-download { padding: 12px 25px; font-size: 1em; }
+
+    #stats-section h2 { font-size: 1.3em; }
+    #stats-section h3 { font-size: 1.1em; }
+    #stats-section p { font-size: 0.9em; }
+    #stats-section ul li { font-size: 0.9em; }
 }
