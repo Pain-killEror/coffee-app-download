@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 // API URL (если HTML открывается не с того же домена, что и API)
-const API_BASE_URL = 'https://3599933d53ca024f7644fb20edc3b245.serveo.net'; // Убедитесь, что этот IP и порт верны и доступны с устройства, где открыт браузер
+const API_BASE_URL = 'https://6de84d0b9739dadb6cac6f2c7a075551.serveo.net'; // Убедитесь, что этот IP и порт верны и доступны с устройства, где открыт браузер
 
 async function fetchCategoryCounts() {
     const breakfastCountSpan = document.getElementById('breakfast-count');
